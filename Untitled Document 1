@@ -1,0 +1,26 @@
+cara buat env :
+virtualenv nama_env
+
+cara aktifkan env :
+source nama_env/bin/activate
+
+cara non-aktifkan env :
+deactivate
+
+cara instal django di env :
+pip isntall django
+
+cara cek isi env :
+pip list
+
+cara membuat project django (folder) :
+django-admin startproject nama_porject
+
+cara bikin app
+python manage.py startapp nama_app
+
+cara run server :
+python manage.py runserver
+
+create server
+
