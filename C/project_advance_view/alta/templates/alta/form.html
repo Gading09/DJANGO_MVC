@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="submit">
+            {% csrf_token %}
+    <div>
+        <label for="">Foto blog:</label>
+        <input type="text" name="foto" placeholder=".jpg">
+    </div>
+    <div>
+        <label for="">Judul blog</label>
+        <input type="text" name="judul" placeholder="judul berita">
+    </div>
+    <div>
+        <label for="">Berita</label>
+        <textarea name="berita" cols="50" rows="10" placeholder="Masukkan berita yang viral !"></textarea>
+    </div>
+    <input type="submit" value="ok">
+    </form>
+</body>
+</html>

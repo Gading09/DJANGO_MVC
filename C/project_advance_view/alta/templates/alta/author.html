@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Untuk judul dan link ke file css dan data gambar -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equip="X-UA-Compatible" content="ie=edge">
+        <title>Alterra Academy</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+    </head>
+    <body>
+        <div class="blog-body">
+            <header>
+                <div class="container">
+                    <div class="row align-items-center blok-header">
+                        <div class="col-md-6 align-items-center company-name">
+                            Alpha Tech Academy
+                        </div>
+                        <div class="col-md-6">
+                            <div class="header-nav">
+                                <ul class="header-nav__list list-unstyled">  
+                                    <li> 
+                                        <a href="{% url 'home' %}">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'blog' %}">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'mentor' %}">Mentor</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'mentee' %}">Mentee</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'author' %}" class="active-page">Author</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="container-fluid left-right-container page-title-background">
+            <div class="container page-title">
+                <div class='company-logo'><img src="../../static/assets/img/title/alpha-logo.png" alt="Gambar Logo"></div>
+                <h1>Alpha Tech Academy Blog</h1>
+                <p>Alpha Tech Academy is a tech talent incubator 
+                    that gives everyone (even non IT background)<br>
+                    a chance to be a professional Tech Talent within 3 months.</p>   
+            </div>          
+        </div>
+        <div class="page1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <img src="../../static/assets/img/author/author.jpg" alt="">
+                        <h4>Nama Author</h4>
+                        <p><span>Please Write your summary</span>,
+                                Lorem ipsum Dolor Sit Amet.
+                                Lorem ipsum Dolor Sit Amet.
+                                Lorem ipsum Dolor Sit Amet.
+                                Lorem ipsum Dolor Sit Amet.
+                                Lorem ipsum Dolor Sit Amet.
+                                Lorem ipsum Dolor Sit Amet.
+                                Lorem ipsum Dolor Sit Amet.
+                        </p>
+                        <table>
+                                <tr>
+                                    <td>Alamat</td>
+                                    <td class="tab">:Alamat Author</td>
+                                </tr>
+                                <tr>
+                                    <td>Telephone </td>
+                                    <td class="tab">:Author's Telephone</td>
+                                </tr>
+                                <tr>
+                                    <td>Education</td>
+                                    <td class="tab">:Author's Education</td>
+                                </tr>
+                                <tr>
+                                    <td>Profession</td>
+                                    <td class="tab">:Author's Profession</td>
+                                </tr>
+                                <tr>
+                                    <td>Nationality</td>
+                                    <td class="tab">:Author's Nationality</td>
+                                </tr>
+                                <tr>
+                                    <td>Company</td>
+                                    <td class="tab">:Author's Company</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td class="tab">:Author's Email</td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td class="tab">:Author's Address</td>
+                                </tr>
+                        </table>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5588.0098159187555!2d112.61123450373901!3d-7.965881862349451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7882865ded0697%3A0xa77fa961a7c4e4b7!2sSepulsa%20Lodge%20Malang!5e0!3m2!1sen!2sid!4v1575900592186!5m2!1sen!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+{% block contant1 %}
+    </body>
+</html>
+{% endblock %}
